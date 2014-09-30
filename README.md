@@ -1,0 +1,1 @@
+Notes and Comments on the building of the site, or credit will be given here.
