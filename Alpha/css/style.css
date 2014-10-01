@@ -37,6 +37,10 @@
 			border-bottom-color: transparent;
 		}
 
+	#resume {
+		padding: 1em;
+	}
+
 	strong, b {
 		color: #646464;
 		font-weight: 400;
