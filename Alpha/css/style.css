@@ -996,6 +996,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		opacity: 0.9;
 	}
 
 		#header h1 {
