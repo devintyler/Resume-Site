@@ -37,10 +37,6 @@
 			border-bottom-color: transparent;
 		}
 
-	#resume {
-		padding-top: 5em;
-	}
-
 	strong, b {
 		color: #646464;
 		font-weight: 400;
@@ -208,6 +204,25 @@
 			color: #777;
 			margin: 1.5em 0 0 0;
 			padding: 1.5em 0 0 0;
+			font-style: normal;
+		}
+
+	header.resume {
+		padding: 1em 0;
+		text-align: center;
+	}
+
+		header.resume h2 {
+			display: inline-block;
+			padding: 0 1.5em .5em 1.5em;
+			margin: 0 0 1.5em 0;
+			border-bottom: solid 2px #e5e5e5;
+		}
+
+		header.resume h3 {
+			text-align: left;
+			padding: 0 0 0 1em;
+			color: #777;
 			font-style: normal;
 		}
 
@@ -1192,7 +1207,7 @@
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
-				background: #e89980;
+				background: #999; /* changes color of dropdown list highlight */
 				color: #ffffff;
 			}
 
@@ -1226,14 +1241,12 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background: -webkit-linear-gradient(left top, #4A4A4A, #898C90); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #4A4A4A, #898C90); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #4A4A4A, #898C90); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #4A4A4A, #898C90); /* Standard syntax */
-		background-image: url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("../images/nyc-night-cover.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
+		background-color: gray;
+		background-blend-mode: darken;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
@@ -1370,31 +1383,79 @@
 
 /* Custom Color Blocks */
 
-	#resume {
-		background: -webkit-linear-gradient(left top, #52EDC7, #5AC8FB); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #52EDC7, #5AC8FB); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #52EDC7, #5AC8FB); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #52EDC7, #5AC8FB); /* Standard syntax */
-		color: #000;
+	#resume1 {
+		background: -webkit-linear-gradient(left top, #7f8c8d, #2c3e50); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #7f8c8d, #2c3e50); /* Standard syntax */
+		color: #fff;
+		overflow: auto;
 		padding: 6em 0 6em 0;
 		text-align: center;
 	}
 
-	#projects {
-		background: -webkit-linear-gradient(left top, #87FC70, #0BD318); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #87FC70, #0BD318); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #87FC70, #0BD318); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #87FC70, #0BD318); /* Standard syntax */
-		color: #000;
+		#resume1 h2, #resume1 h3, #resume1 h4, #resume1 h5, #resume1 h6, #resume1 p {
+			color: inherit;
+		}
+
+	#projects1 {
+		background: -webkit-linear-gradient(left top, #16a085, #1abc9c); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #16a085, #1abc9c); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #16a085, #1abc9c); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #16a085, #1abc9c); /* Standard syntax */
+		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
 	}
+
+		#projects1 h2, #projects1 h3, #projects1 h4, #projects1 h5, #projects1 h6, #projects1 p {
+			color: inherit;
+		}
+
+	#contactBox {
+		background-color: #e67e22;
+		color: #fff;
+		padding: 6em 0 6em 0;
+		text-align: center;
+	}
+
+		#contactBox h2, #contactBox h3, #contactBox h4, #contactBox h5, #contactBox h6, #contactBox p {
+			color: inherit;
+		}
 
 	#spacer {
-		background-color: #fff;
-		padding: 3em 0 3em 0;
+		background-color: #f5f5f5;
+		padding: 1.7em 0 1.5em 0;
 		text-align: center;
 	}
+
+/* Resume Columns */
+
+	#containCol {
+		width: 90%;
+		padding: 1em 1em 1em 1em;
+	}
+	
+	.col1 {
+		float: left;
+		width: 30%;
+	}
+
+	.col2outer {
+		float:right;
+		width: 60%;
+	}
+
+	.col2outer .col2mid {
+		float: left;
+		width: 30%;
+	}
+
+	.col2outer .col2right {
+		float: right;
+		width:30%;
+	}
+
 
 /* CTA */
 
