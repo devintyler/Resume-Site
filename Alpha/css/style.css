@@ -14,7 +14,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #777;
+		color: #fff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -28,7 +28,6 @@
 		-o-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #e89980;
 		text-decoration: none;
 	}
@@ -213,10 +212,12 @@
 	}
 
 		header.resume h2 {
+			color: #fff;
 			display: inline-block;
 			padding: 0 1.5em .5em 1.5em;
 			margin: 0 0 1.5em 0;
 			border-bottom: solid 2px #e5e5e5;
+			font-size: 38pt;
 		}
 
 		header.resume h3 {
@@ -658,6 +659,7 @@
 
 		ul li {
 			padding-left: 0.5em;
+			color: #777;
 		}
 
 		ul.alt {
@@ -1384,25 +1386,27 @@
 /* Custom Color Blocks */
 
 	#resume1 {
-		background: -webkit-linear-gradient(left top, #7f8c8d, #2c3e50); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #7f8c8d, #2c3e50); /* Standard syntax */
+		background-color: #2c3e50;
+		/*background: -webkit-linear-gradient(left top, #7f8c8d, #2c3e50); /* For Safari 5.1 to 6.0 */*/
+	  	/*background: -o-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Opera 11.1 to 12.0 */*/
+	  	/*background: -moz-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Firefox 3.6 to 15 */*/
+	  	/*background: linear-gradient(to bottom right, #7f8c8d, #2c3e50); /* Standard syntax */*/
 		color: #fff;
 		overflow: auto;
 		padding: 6em 0 6em 0;
 		text-align: center;
 	}
 
-		#resume1 h2, #resume1 h3, #resume1 h4, #resume1 h5, #resume1 h6, #resume1 p {
+		#resume1 h2, #resume1 h3, #resume1 h4, #resume1 h5, #resume1 h6, #resume1 p, #resume1 a {
 			color: inherit;
 		}
 
 	#projects1 {
-		background: -webkit-linear-gradient(left top, #16a085, #1abc9c); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #16a085, #1abc9c); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #16a085, #1abc9c); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #16a085, #1abc9c); /* Standard syntax */
+		background-color: #1abc9c;
+		/*background: -webkit-linear-gradient(left top, #16a085, #1abc9c);*/ /* For Safari 5.1 to 6.0 */
+	  	/*background: -o-linear-gradient(bottom right, #16a085, #1abc9c);*/ /* For Opera 11.1 to 12.0 */
+	  	/*background: -moz-linear-gradient(bottom right, #16a085, #1abc9c);*/ /* For Firefox 3.6 to 15 */
+	  	/*background: linear-gradient(to bottom right, #16a085, #1abc9c);*/ /* Standard syntax */
 		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
@@ -1432,29 +1436,40 @@
 /* Resume Columns */
 
 	#containCol {
-		width: 90%;
+		width: 100%;
 		padding: 1em 1em 1em 1em;
 	}
 	
 	.col1 {
 		float: left;
-		width: 30%;
+		width: 32%;
+		border: solid 2px;
+		border-radius: 2em;
+		min-height: 22em;
 	}
 
 	.col2outer {
-		float:right;
-		width: 60%;
+		float: right;
+		width: 66.5%;
 	}
 
 	.col2outer .col2mid {
 		float: left;
-		width: 30%;
+		width: 49%;
+		border: solid 2px;
+		border-radius: 2em;
+		min-height: 22em;
 	}
 
 	.col2outer .col2right {
 		float: right;
-		width:30%;
+		width: 49%;
+		border: solid 2px;
+		border-radius: 2em;
+		min-height: 22em;
 	}
+
+/* Experiments */
 
 
 /* CTA */
