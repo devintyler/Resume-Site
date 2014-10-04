@@ -20,6 +20,9 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/smooth-scroll.js"></script>
+		<script>window.jQuery || document.write('<script src="jquery-1.11.1.min.js"><\/script>')</script>
+		<script src="js/skrollr.js"></script>
+		<script src="js/_main.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -95,18 +98,24 @@
 				<header class="resume">
 					<a href="#education"><h2>Education</h2></a>
 				</header>
+				<div style="margin: 0 auto; margin-top: -4em; width: 60%;">
+					<img src="images/nyu.png" class="image fit">
+				</div>
+				<div id="nextSec">
+					<a href="#projects" class="button">Next - Projects</a>
+				</div>
 			</section>
 			<div name="projects"></div>
 			<section id="projectsBlock">
-				<header class="major">
+				<header class="resume">
 					<h2>Projects</h2>
 					<p>Here goes project stuff..</p>
 				</header>
 			</section>
 		<!-- Contact -->
 			<div name="contact"></div>
-			<section class="box special" id="contactBox">
-				<header class="major">
+			<section id="contactBlock">
+				<header class="resume">
 					<h2>Get In Touch</h2>
 					<p></p>
 				</header>
