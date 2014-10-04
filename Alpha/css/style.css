@@ -11,6 +11,8 @@
 
 	body {
 		background: #f5f5f5;
+		transition: 100s linear;
+    	transition-property: background-position;
 	}
 
 	body, input, select, textarea {
@@ -1007,7 +1009,7 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: #566D7E;
+		background: #333;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -1341,6 +1343,7 @@
 		background: #f0f0f0;
 		padding: 4em 0 6em 0;
 		text-align: center;
+		height: 30vh;
 	}
 
 		#footer .icons a {
@@ -1392,9 +1395,9 @@
 	  	/*background: -moz-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Firefox 3.6 to 15 */*/
 	  	/*background: linear-gradient(to bottom right, #7f8c8d, #2c3e50); /* Standard syntax */*/
 		color: #fff;
-		overflow: auto;
 		padding: 6em 0 6em 0;
 		text-align: center;
+		height: 100vh;
 	}
 
 		#workExpBlock h2, #workExpBlock h3, #workExpBlock h4, #workExpBlock h5, 
@@ -1408,6 +1411,7 @@
 		overflow: auto;
 		padding: 6em 0 6em 0;
 		text-align: center;
+		height: 100vh;
 	}
 
 	#projectsBlock {
@@ -1419,6 +1423,7 @@
 		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
+		height: 100vh;
 	}
 
 		#projectsBlock h2, #projectsBlock h3, #projectsBlock h4, #projectsBlock h5, 
@@ -1431,6 +1436,7 @@
 		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
+		height: 70vh;
 	}
 
 		#contactBlock h2, #contactBlock h3, #contactBlock h4, #contactBlock h5, 
@@ -1511,101 +1517,33 @@
 				color: #666 !important;
 			}
 
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
-	
-	.no-js {
-		padding-top: 106px;
+	#prevSec {
+		float: left;
+		padding: 2em 0 0 2em;
 	}
 
-	.loading {
-		background: url('../img/ico_loading.gif') no-repeat center center;
-	}
-	section {
-		min-width: 960px;
-		opacity: 100;
-	}
-	.loaded section,
-	.no-js section {
-		opacity: 1;
-		-webkit-transition: opacity 300ms ease-out;
-		-moz-transition: opacity 300ms ease-out;
-		transition: opacity 300ms ease-out;
-	}
-	main {
-		overflow-x: hidden;
-	}
-
-	.bcg {
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		height: 100%;
-		width: 100%;
-	}
-	/* Slide 1 */
-	#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
-
-	/* Slide 2 */
-	#slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
-
-	/* Slide 3 */
-	#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
-
-
-	/* Slide 4 */
-	.curtainContainer {width: 100%; height: 100%; position: relative;}
-	.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
-	.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
-
-	#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
-
-	/* Slide 5 */
-	#slide-5 {position: relative;}
-	#slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg')}
-	#slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
-	#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
-
-	.hsContainer {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		position: relative;
-	}
-
-	.hsContent {
-		max-width: 450px;
-		margin: -150px auto 0 auto;
-		display: table-cell;
-		vertical-align: middle;
-		color: #ebebeb;
-		padding: 0 8%;
-		text-align: center
-	}
-		.hsContent h2,
-		.copy h2 {
-			color: #ffffff;
-			font-size: 45px;
-			line-height: 48px;
-			margin-bottom: 12px;
-		}
-		.hsContent p {
-			width: 400px;
-			margin: 0 auto;
-			color: #b2b2b2;
-		}
-		.hsContent a {
-			color: #b2b2b2;
-			text-decoration: underline;
-		}
-		.bgBlack {
-			background-color: rgba(0,0,0,0.75);
-			padding: 3px 10px;
+		#prevSec input[type="button"],
+		#prevSec .button {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+			color: #fff;
+			min-width: 12em;
 		}
 
+			#prevSec input[type="button"]:hover,
+			#prevSec .button:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			#prevSec input[type="button"]:active,
+			#prevSec .button:active {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			#prevSec input[type="button"].special,
+			#prevSec .button.special {
+				background: #fff;
+				color: #666 !important;
+			}
 
 
