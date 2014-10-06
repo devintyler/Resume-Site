@@ -1343,7 +1343,7 @@
 		background: #f0f0f0;
 		padding: 4em 0 6em 0;
 		text-align: center;
-		height: 30vh;
+		height: 25vh;
 	}
 
 		#footer .icons a {
@@ -1389,15 +1389,16 @@
 /* Custom Color Blocks */
 
 	#workExpBlock {
-		background-color: #1abc9c;
+		background-color: #428F89;
 		/*background: -webkit-linear-gradient(left top, #7f8c8d, #2c3e50); /* For Safari 5.1 to 6.0 */*/
 	  	/*background: -o-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Opera 11.1 to 12.0 */*/
 	  	/*background: -moz-linear-gradient(bottom right, #7f8c8d, #2c3e50); /* For Firefox 3.6 to 15 */*/
 	  	/*background: linear-gradient(to bottom right, #7f8c8d, #2c3e50); /* Standard syntax */*/
 		color: #fff;
 		padding: 6em 0 6em 0;
+		overflow: hidden;
 		text-align: center;
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 		#workExpBlock h2, #workExpBlock h3, #workExpBlock h4, #workExpBlock h5, 
@@ -1411,11 +1412,11 @@
 		overflow: auto;
 		padding: 6em 0 6em 0;
 		text-align: center;
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	#projectsBlock {
-		background-color: #1BA39C;
+		background-color: #97282C;
 		/*background: -webkit-linear-gradient(left top, #16a085, #1abc9c);*/ /* For Safari 5.1 to 6.0 */
 	  	/*background: -o-linear-gradient(bottom right, #16a085, #1abc9c);*/ /* For Opera 11.1 to 12.0 */
 	  	/*background: -moz-linear-gradient(bottom right, #16a085, #1abc9c);*/ /* For Firefox 3.6 to 15 */
@@ -1423,7 +1424,7 @@
 		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 		#projectsBlock h2, #projectsBlock h3, #projectsBlock h4, #projectsBlock h5, 
@@ -1436,7 +1437,7 @@
 		color: #fff;
 		padding: 6em 0 6em 0;
 		text-align: center;
-		height: 70vh;
+		min-height: 70vh;
 	}
 
 		#contactBlock h2, #contactBlock h3, #contactBlock h4, #contactBlock h5, 
