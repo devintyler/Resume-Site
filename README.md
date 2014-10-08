@@ -17,9 +17,10 @@ Included Features:
 
 Next Updates:
 
+- Consider Adding Separate HTML for Mobile
+- Change Font
+- Change Buttons to get away from Template
 - Add Resume Information
-- Adjust Projects Tab
-- Adjust Contact Tab
 - Add Links to Social Media
 - Change Background Image for Header
 - Fix Mobile Links for Menu
