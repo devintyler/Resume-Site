@@ -1,4 +1,4 @@
-Templates:
+Templates: 
 
 1. Alpha
 	- a nicer desing, but possibly too nice for a resume site
